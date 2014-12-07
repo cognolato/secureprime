@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Homepage</title>
+    </h:head>
+    <h:body>
+        <h:form>       
+            <h1>Benvenuto, #{loginBean.uname}</h1>
+            <p>questa è la home page del sito.</p>
+            <p:link outcome="esempio" value="Vai alla pagina di esempio"></p:link><br/><br/>
+        <p:commandButton action="#{loginBean.logout}" value="Logout"  ajax="false"></p:commandButton>
+    </h:form>
+    </h:body>
+</html>
